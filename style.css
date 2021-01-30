@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+
+/* Style for Homepage */
+
+li, a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 2%;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.name {
+    margin-right: auto;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.pic__solo {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    position: relative;
+    margin: 50px 350px 10px 350px;
+}
+
+h1 {
+    font-family: 'Staatliches';
+    font-weight: 800;
+    font-size: 50px;
+    color: #edf0f1
+}
+
+h1 {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+
+.home_content {
+    color: whitesmoke;
+    font-family: 'Staatliches';
+    font-size: 45px;
+    display: grid;
+    margin: 0 0 0 30px;
+}
+
+.home_title {
+    margin: 50px 0 0 0;
+}
+
+.pic_home {
+    max-width: 500px;
+    margin: 50px 0 50px 0;
+}
+
+.name_one {
+    margin: 0 0 0 150px;
+}
+
+@media (min-width: 800px) {
+    .home_content {
+        color: whitesmoke;
+        font-family: 'Staatliches';
+        font-size: 50px;
+        display: grid;
+        margin: 0 0 0 0;
+    }
+    .home_title {
+        margin: 20px 0 10px 100px;
+    }
+    .home_pic {
+        margin: 5px 0 0px 300px;
+    }
+    .pic_home {
+        max-width: 800px;
+    }
+    .name_one {
+        margin: 0 0 0 900px;
+
+    }
+}
+
+/* about two */
+
+.about_content {
+    max-width: 1000px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+@media (min-width: 900px) {
+    .about_content {
+        max-width: 1000px;
+        margin: 30px auto;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+    }
+
+    .about_text {
+        font-size: 30px;
+        padding: 40px 0;
+    }
+
+    .pic_car_me {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .about_content {
+        max-width: 1000px;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 40% 10% 30%;
+    }
+
+    .about_text {
+        margin: 0 0 0 20px;
+        font-size: 20px;
+        padding: 40px 0;
+    }
+
+    .pic_car_me {
+        max-width: 250px;
+    }
+}
+
+.more_about {
+    width: 1200px;
+    color: whitesmoke;
+    font-family: 'Montserrat';
+    font-size: 25;
+    margin: 0 auto;
+    display: grid;
+}
+
+@media (min-width: 900px) {
+    .more_about {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+.about_more {
+    max-width: 100%;
+    font-size: 25px;
+    padding: 50px 60px;
+}
+
+.about_more:nth-child(1) {background-color: salmon;}
+.about_more:nth-child(2) {background-color: slategray}
+.about_more:nth-child(3) {background-color: grey}
+
+/* Style for Projects Page */
+
+.menu_projects_parent {
+    max-width: 1300px;
+    margin: 50px auto;
+    font-family: 'Montserrat';
+
+}
+
+.menu_projects_child {
+    flex: 1;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 80px 7% 80px 0;
+    padding-left: 7%;
+    box-sizing: border-box;
+    flex-basis: 25%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .menu_projects_parent {
+        display: flex;
+        margin: 160px auto;
+        justify-content: space-between;
+    }
+}
+
+/* Style for Calendar Page */
+
+.calendar_img {
+    max-width: 1440px;
+}
+
+@media (max-width: 900px) {
+    .calendar_img {
+        max-width: 550px;
+    }
+}
+
+.description_calendar {
+    max-width: 1000px;
+    color: whitesmoke;
+    margin: 90px auto;
+}
+
+.project_description {
+    font-family: 'Staatliches';
+    font-size: 45px;
+    padding-top: 60px;
+}
+
+.project_description_text {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    margin: 50px auto;
+}
+
+.steps_description {
+    font-size: 23px;
+    padding: 50px 20px 80px 20px;
+}
+
+/* Style for Poster Page */
+
+.pic_posters {
+    max-width: 1200px;
+    display: grid;
+    margin: 100px auto 100px auto;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.posters_img {
+    max-width: 100%;
+}
+
+/* Style for Logos Page */
+
+.description_logos {
+    max-width: 1000px;
+    color: whitesmoke;
+    margin: 60px auto;
+}
+
+.project_description_text {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    padding: 3em 3em 0 3em;
+}
+
+.pic_logos {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.logos_pic {
+    max-width: 100%;
+}
+
+/* Style for University Page */
+
+.description_university {
+    max-width: 1000px;
+    color: whitesmoke;
+    margin: 60px auto;
+}
+
+.project_description_text {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    padding: 3em 3em 0 3em;
+}
+
+.uni_description_text {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    padding: 1em 3em 0 3em;
+}
+
+.pic_uni {
+    max-width: 1200px;
+    display: grid;
+    margin: 30px auto 5px auto;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+}
+
+.uni_img {
+    max-width: 100%;
+}
+
+/* Style for Contact Page */
+
+.contact_info {
+    color: whitesmoke;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin: 100px 100px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 3em;
+}
+
+.contact_in {
+    margin: auto;
+}
+
+@media (min-width: 900px) {
+    .contact_info {
+        color: whitesmoke;
+        font-family: 'Montserrat';
+        font-size: 50px;
+        margin: 100px 200px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 3em;
+    }
+
+    .contact_in {
+        margin: auto;
+    }
+}
